@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="contact">
+      <h2>Contact Form!</h2>
+      <form action="#">
+        <div class="input_box">
+          <div class="input_field field">
+            <input
+              class="item"
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              autocomplete="off"
+            />
+            <div class="error_txt checkusername">Full Name can't be blank</div>
+          </div>
+          <div class="input_field field">
+            <input
+              class="item"
+              type="text"
+              placeholder="Email Address"
+              id="email"
+              autocomplete="off"
+            />
+            <div class="error_txt checkemail">Email Address can't be blank</div>
+          </div>
+        </div>
+
+        <div class="input_box">
+          <div class="input_field field">
+            <input
+              class="item"
+              type="text"
+              placeholder="Phone"
+              id="phone"
+              autocomplete="off"
+            />
+            <div class="error_txt checkphone">Phone Number can't be blank</div>
+          </div>
+          <div class="input_field field">
+            <input
+              class="item"
+              type="text"
+              placeholder="Address"
+              id="address"
+              autocomplete="off"
+            />
+            <div class="error_txt checkaddress">Address can't be blank</div>
+          </div>
+        </div>
+
+        <div class="textarea_field field">
+          <textarea
+            class="item"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <div class="error_txt checkmessage">Message can't be blank</div>
+        </div>
+        <button type="submit">Send Your info</button>
+      </form>
+    </section>
+  </body>
+  <script src="./scripts/script.js" defer></script>
+</html>
