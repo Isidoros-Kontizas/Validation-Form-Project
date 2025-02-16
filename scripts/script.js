@@ -168,11 +168,6 @@ function validateMessage() {
   const messageValue = message.value.trim();
   const errorTxtMessage = document.querySelector(".error_txt.checkmessage");
 
-  if (!errorTxtMessage) {
-    console.error("Error message element for message not found!");
-    return;
-  }
-
   if (messageValue === "") {
     errorTxtMessage.innerText = "Message can't be blank";
     message.classList.add("error");
