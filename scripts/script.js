@@ -71,7 +71,8 @@ function validateEmail() {
     email.parentElement.classList.add("error");
 
     if (emailValue !== "") {
-      errorTxtEmail.innerText = "Enter a valid email";
+      errorTxtEmail.innerText =
+        "Enter a valid email address, such as name@example.com";
     } else {
       errorTxtEmail.innerText = "Email Address can't be blank";
     }

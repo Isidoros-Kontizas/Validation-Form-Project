@@ -7,20 +7,26 @@
 
   font-family: "Poppins", sans-serif;
 }
-
+:root {
+  --black-color: #202020;
+  --white-color: #fff;
+  --light-gray: #ececec;
+  --blue-color: #2269d3;
+  --red-color: #c62828;
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #333;
+  background-color: var(--light-gray);
 }
 
 .contact h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--black-color);
 }
 
 .contact form {
@@ -41,21 +47,20 @@ form .input_box {
   width: 100%;
   padding: 18px;
   background: transparent;
-  border: 2px solid aqua;
+  border: 2px solid var(--black-color);
   border-radius: 6px;
   outline: none;
   font-size: 16px;
   margin: 12px 0;
-  color: #fff;
+  color: var(--black-color);
 }
 
 .field.error .item {
-  border-color: #d03025;
+  border-color: var(--red-color);
 }
 
-
 .field .item::placeholder {
-  color: #fff;
+  color: var(--black-color);
 }
 
 .field.error .error_txt {
@@ -64,7 +69,7 @@ form .input_box {
 
 .field .error_txt {
   font-size: 15px;
-  color: #d03025;
+  color: var(--red-color);
   text-align: left;
   margin: -5px 0 10px;
   display: none;
@@ -80,13 +85,13 @@ form .textarea_field .error_txt {
 
 form button {
   padding: 12px 32px;
-  background-color: aqua;
+  background-color: var(--blue-color);
   border: none;
   outline: none;
   border-radius: 6px;
-  box-shadow: 0 0 10px aqua;
+  box-shadow: 0 0 10px var(--blue-color);
   font-size: 16px;
-  color: #333;
+  color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
